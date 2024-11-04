@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="HANDHELD FABRICATOR TEST" modversion="1.0" corepackage="False" gameversion="1.6.19.1">
+	<Item file="%ModDir%/Content/handheldfabricator.xml"/>
+</contentpackage>

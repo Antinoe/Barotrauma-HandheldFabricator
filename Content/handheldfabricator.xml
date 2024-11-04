@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+	<Item name="Handheld Fabricator" identifier="handheldfabricator" category="Equipment" Tags="smallitem,fabricator" description="A portable, lightweight Fabricator, capable of producing complex creations from raw materials." cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+		<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,0,64,64" origin="0.5,0.5" />
+		<Sprite texture="Content/Items/Tools/tools.png" sourcerect="227,163,48,24" depth="0.55" origin="0.5,0.5" />
+		<Body width="40" height="22" density="12" />
+		<Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="-25,0" selectkey="Select" pickkey="Use" PickingTime="1.0" aimpos="65,-10" attachable="true" aimable="true" msg="ItemMsgDetachWrench">
+			<RequiredItem items="wrench" type="Equipped"/>
+			<StatusEffect type="OnBroken" target="This">
+				<Remove/>
+			</StatusEffect>
+		</Holdable>
+		<Fabricator FabricationSpeed="10.0" powerconsumption="0.0" canbeselected="true" drawhudwhenequipped="true" msg="ItemMsgInteractSelect">
+		  <GuiFrame relativesize="0.4,0.45" style="ItemUI" anchor="Center" />
+		  <sound file="Content/Items/Fabricators/Fabricator.ogg" type="OnActive" range="1000.0" volumeproperty="RelativeVoltage" loop="true" />
+		</Fabricator>
+		<ItemContainer drawhudwhenequipped="true" capacity="5" canbeselected="true" hideitems="true" slotsperrow="5" uilabel="" allowuioverlap="true"/>
+		<ItemContainer drawhudwhenequipped="true" capacity="1" canbeselected="true" hideitems="true" slotsperrow="1" uilabel="" allowuioverlap="true"/>
+	</Item>
+</Items>
